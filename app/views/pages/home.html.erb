@@ -1,0 +1,51 @@
+<div class='home'>
+  <%= render 'components/navbar' %>
+  <%= render 'components/banner' %>
+  <div class='container-fluid social'>
+    <div>
+      <i class="fa-brands fa-instagram fa-2xl"></i>
+      <i class="fa-brands fa-spotify fa-2xl"></i>
+      <i class="fa-brands fa-youtube fa-2xl"></i>
+      <i class="fa-brands fa-facebook fa-2xl"></i>
+    </div>
+  </div>
+  <div class="container merch">
+    <div>
+      <div class="sub-header">
+        <h2>MERCH</h2>
+        <h2>_____</h2>
+      </div>
+      <div class="row">
+        <div class="col-6 col-lg-4 py-3 center"><%= image_tag "__SOA_Logo_clean.png", height: '150', width: '150', alt: "SOAlogo"%></div>
+        <div class="col-6 col-lg-4 py-3 center"><%= image_tag "__SOA_Logo_clean.png", height: '150', width: '150', alt: "SOAlogo"%></div>
+        <div class="col-6 col-lg-4 py-3 center"><%= image_tag "__SOA_Logo_clean.png", height: '150', width: '150', alt: "SOAlogo"%></div>
+        <div class="col-6 col-lg-4 py-3 center"><%= image_tag "__SOA_Logo_clean.png", height: '150', width: '150', alt: "SOAlogo"%></div>
+        <div class="col-6 col-lg-4 py-3 center"><%= image_tag "__SOA_Logo_clean.png", height: '150', width: '150', alt: "SOAlogo"%></div>
+        <div class="col-6 col-lg-4 py-3 center"><%= image_tag "__SOA_Logo_clean.png", height: '150', width: '150', alt: "SOAlogo"%></div>
+      </div>
+    </div>
+  </div>
+  <div class="container videos">
+    <div>
+      <div class="sub-header">
+        <h2>VIDEOS</h2>
+        <h2>______</h2>
+      </div>
+      <div class="row">
+        <div id="main-video" class="col-lg-12 center">
+          <iframe src="https://www.youtube.com/embed/TETVNH3k8Ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="row">
+        <div id="main-video" class="col-lg-6 center">
+          <iframe src="https://www.youtube.com/embed/TETVNH3k8Ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="main-video" class="col-lg-6 center">
+          <iframe src="https://www.youtube.com/embed/TETVNH3k8Ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%# Below is connected to a js controller that types across the screen %>
+<%# <p><span data-controller="typed-js"></span></p> %>

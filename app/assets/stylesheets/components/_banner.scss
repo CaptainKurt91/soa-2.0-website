@@ -1,0 +1,12 @@
+.banner {
+  background-image: asset-url("sm_banner.png");
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 45vw;
+  position: relative;
+
+  img {
+    position: absolute;
+  }
+}

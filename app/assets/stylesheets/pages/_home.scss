@@ -1,0 +1,76 @@
+// Specific CSS for your home-page
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+.home {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  i {
+    color: black;
+    padding: 5px;
+  }
+}
+
+.sub-header {
+  text-align: center;
+  h2 {
+    font-family: 'Metal Mania', cursive;
+    line-height: .2;
+    font-size: 26px;
+    color: white;
+    padding: 10px;
+  }
+}
+
+.merch {
+  color: white;
+  padding-top: 20px;
+  max-width: 750px;
+
+  img {
+    border: none;
+    background-color: white;
+    padding: 10px 10px;
+  }
+
+}
+
+.videos {
+  display: flex;
+  justify-content: center;
+
+  iframe {
+    padding: 16px;
+  }
+}
+
+#main-video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
