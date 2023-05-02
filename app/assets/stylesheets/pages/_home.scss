@@ -1,17 +1,31 @@
 // Specific CSS for your home-page
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
-.home {
-  background-color: black;
+
+
+.main-heading {
+  color: white;
   display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  position: absolute;
+  right: 0px;
+  left: -52px;
+
+  h1 {
+    padding-top: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 6rem
+  }
 }
 
 .center {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
+.cover-art {
+  width: 13%;
+}
 .social {
   background-color: white;
   display: flex;
@@ -36,18 +50,6 @@
   }
 }
 
-.merch {
-  color: white;
-  padding-top: 20px;
-  max-width: 750px;
-
-  img {
-    border: none;
-    background-color: white;
-    padding: 10px 10px;
-  }
-
-}
 
 .videos {
   display: flex;
