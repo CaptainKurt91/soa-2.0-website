@@ -1,6 +1,9 @@
 // Specific CSS for your home-page
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
-
+.text {
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
 
 .main-heading {
   color: white;
@@ -14,14 +17,35 @@
     font-size: 6rem;
 
   }
-  @media only screen and (max-width:600px) {
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
     padding-right: 1rem;
     h1 {
       font-size: 2rem;
     }
   }
 
-  @media only screen and (min-width:945px) {
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
     padding-top: 2rem;
     padding-right: 2rem;
 
@@ -29,18 +53,19 @@
       font-size: 3rem;
     }
   }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    padding-top: 2rem;
+    padding-right: 2rem;
+
+    h1 {
+      font-size: 6rem;
+    }
+  }
 }
 
 
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cover-art {
-  width: 13%;
-}
 .social {
   background-color: white;
   display: flex;
@@ -48,40 +73,31 @@
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-right: 5%;
   i {
     color: black;
-    padding: 5px;
-  }
-}
-
-.sub-header {
-  text-align: center;
-  h2 {
-    font-family: 'Metal Mania', cursive;
-    line-height: .2;
-    font-size: 26px;
-    color: white;
     padding: 10px;
   }
 }
 
+#videos-section {
+  background-color: black;
 
-.videos {
-  display: flex;
-  justify-content: center;
-
-  iframe {
-    padding: 16px;
+  .upper-iframe-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 75%;
+    padding-top: 46.25%;
   }
-}
 
-#main-video {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%;
+  .lower-iframe-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+  }
 
-  iframe {
+  .iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -89,5 +105,120 @@
     right: 0;
     width: 100%;
     height: 100%;
+  }
+
+  .col {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+}
+
+
+.sub-heading {
+  h2 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 4rem;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    h2 {
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      font-size: 2rem;
+    }
+  }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    h2 {
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      font-size: 2rem;
+    }
+  }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    h2 {
+      padding-bottom: 1rem;
+      padding-top: 1.5rem;
+      font-size: 2.5rem;
+    }
+  }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    h2 {
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      font-size: 3rem;
+    }
+  }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    h2 {
+      padding-bottom: 3rem;
+      padding-top: 2rem;
+      font-size: 6rem;
+    }
+  }
+}
+
+#bio {
+  background-color: black;
+  .col {
+    display: flex;
+    justify-content: center;
+  }
+  p {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+  }
+  img {
+    width: 90%;
+    padding-bottom: 3rem;
+  }
+  .text {
+    font-size: 3rem;
+  }
+}
+
+#assets {
+  padding-top: 2rem;
+  background-color: rgba(231, 231, 231, 1);
+  .text {
+    color: black;
+    font-weight: bold;
+    padding-left: 32%;
+  }
+
+  .icon {
+    position: relative;
+    left: 3%;
+    align-self: center;
+  }
+  .logo {
+    padding-top: 0%;
+    position: relative;
+    right: 4%;
+    align-self: center;
+  }
+  .promo-photo {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 80%;
+    }
   }
 }
