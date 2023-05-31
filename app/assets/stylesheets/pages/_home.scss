@@ -67,17 +67,20 @@
 
 
 .social {
-  background-color: white;
+  background-color: black;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 5%;
+  justify-content: space-evenly;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   i {
-    color: black;
-    padding: 10px;
+    color: white;
+    padding: 16px;
+  }
+  // finish this
+  i:hover {
+    text-shadow: 10px 10px 10px white;
   }
 }
 
