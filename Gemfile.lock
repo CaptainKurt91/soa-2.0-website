@@ -110,6 +110,10 @@ GEM
       activesupport (>= 5.0.0)
     jsbundling-rails (1.1.1)
       railties (>= 6.0.0)
+    launchy (2.5.2)
+      addressable (~> 2.8)
+    letter_opener (1.8.1)
+      launchy (>= 2.2, < 3)
     loofah (2.20.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -118,6 +122,8 @@ GEM
       net-imap
       net-pop
       net-smtp
+    mail_interceptor (0.0.7)
+      activesupport
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
@@ -240,6 +246,8 @@ DEPENDENCIES
   font-awesome-sass (~> 6.1)
   jbuilder
   jsbundling-rails
+  letter_opener
+  mail_interceptor
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.1)
   sassc-rails
