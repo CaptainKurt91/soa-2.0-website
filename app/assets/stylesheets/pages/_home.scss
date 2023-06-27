@@ -219,6 +219,7 @@ body {
 }
 
 #bio {
+  // TODO: set media queries
   background-color: black;
   .col {
     display: flex;
@@ -240,6 +241,8 @@ body {
 }
 
 #assets {
+  // set thicknesss of heading up higher
+  // media queries??
   padding-top: 2rem;
   background-color: rgba(231, 231, 231, 1);
   .text {
