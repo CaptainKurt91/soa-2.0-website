@@ -7,6 +7,9 @@ body {
   font-family: 'Lato', sans-serif;
   color: white;
 }
+.is-hidden {
+  display: none !important;
+}
 
  .main-heading {
   color: white;
@@ -152,14 +155,11 @@ body {
     width: 100%;
     height: 100%;
   }
-
-  .col {
-    display: flex !important;
-    justify-content: center !important;
-  }
-
 }
 
+#bio {
+
+}
 
 .sub-heading {
   h2 {
@@ -247,28 +247,21 @@ body {
   background-color: rgba(231, 231, 231, 1);
   .text {
     color: black;
-    font-weight: bold;
-    padding-left: 32%;
+    font-weight: bolder;
   }
 
   .icon {
     position: relative;
-    left: 3%;
     align-self: center;
   }
   .logo {
-    padding-top: 0%;
+    padding-top: 0;
     position: relative;
-    right: 4%;
     align-self: center;
   }
   .promo-photo {
     display: flex;
     justify-content: center;
-
-    img {
-      width: 80%;
-    }
   }
 }
 
