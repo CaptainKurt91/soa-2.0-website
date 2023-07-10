@@ -56,47 +56,65 @@
     </div>
   </div>
 </section>-->
-# TODO: center dates, refactor section and make neater, set correct weight for text, refactor css
-<section id='our-shows'>
+<!-- TODO: center dates, refactor section and make neater, set correct weight for text, refactor css-->
+<div class="line-break"></div>
+<section id="shows">
   <div class="container">
     <div class="row">
-      <div class="col align-content-center">
+      <div class="col sub-heading">
+        <h2 class="text-center">TOUR DATES</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col show-text">
         <h4 class="text text-left">AUG 25th FRI</h4>
+        <h5 class="text text-left">KJ Hueweg, 19:00</h5>
+        <h5 class="text text-left">w/ Treveller, Hostage, The Pariah</h5>
+        <h5 class="text text-left">Hamburg, DE</h5>
+        <%= link_to "Tickets",
+                    "https://www.universe.com/events/scent-of-amber-revaira-traveller-release-show-hamburg-tickets-JLP5RZ",
+                    class: "btn btn-outline-light btn-lg"
+        %>
+      </div>
+      <div class="col show-text">
+        <h4 class="text text-left">AUG 26th SAT</h4>
         <h5 class="text text-left">Headcrash, 19:00</h5>
         <h5 class="text text-left">w/ Revaira, Treveller, In Fragments</h5>
         <h5 class="text text-left">Hamburg, DE</h5>
+        <%= link_to "Tickets",
+                    "https://eventfrog.de/de/p/konzert/hard-rock-heavy-metal/traveller-the-homesick-session-essen-7072895734068946525.html",
+                    class: "btn btn-outline-light btn-lg"
+        %>
       </div>
-      <div class="col align-content-center">
-        <h4 class="text text-left">AUG 25th FRI</h4>
-        <h5 class="text text-left">Headcrash, 19:00</h5>
-        <h5 class="text text-left">w/ Revaira, Treveller, In Fragments</h5>
-        <h5 class="text text-left">Hamburg, DE</h5>
-      </div>
+    </div>
   </div>
 </section>
-<section>
+<div class="line-break"></div>
+<section id="bio" >
   <div class="container">
     <div class="row">
       <div class="col sub-heading">
         <h2 class="text-center">THE BAND</h2>
       </div>
     </div>
-        <p class="text-left">
-          Welcome to our homepage. We are Scent of Amber, a Deathcore metal band. Our music delves into themes of death,
+    <div class="row">
+      <p class="text-left">
+          Welcome to our homepage. We are Scent of Amber, a Deathcore metal band from Hamburg, Germany. Our music delves into themes of death,
           depression, weltschmerz, addiction, and loneliness.
-        </p>
-        <p class="text-left">
+      </p>
+      <p class="text-left">
           In fact, we have a rather negative perspective on how humanity
           treats both the world and itself. That's why the five of us came together, forming this band, to channel our
           inner struggles and amplify them through the power of music.
-        </p>
-        <p class="text-left">
+      </p>
+      <p class="text-left">
           We officially formed in December 2020, although, honestly, who really cares about the exact date? This summer
           of 2023, we are excited to announce the upcoming release of our debut single, "Temptress of Greed." It will
           be available for streaming on all major platforms at the end of August, complete with an accompanying music video.
           To stay up-to-date with our releases, exclusive content, upcoming shows, and ticket links, make sure to follow
           us on our social media platforms. Feel free to explore our website and discover more about our music and our journey.
-        </p>
+      </p>
+    </div>
     <br>
     <div class="row">
       <div class="col">
@@ -115,30 +133,31 @@
         <%= image_tag "bio_photo.png", class: "img-fluid"%>
       </div>
     </div>
+  </div>
 </section>
 
 <section id="assets">
   <div class="container">
     <div class="row">
-      <div class="col sub-heading">
+      <div class="col-4 sub-heading">
         <h2 class='text'>ASSETS</h2>
         <h3 class='text'>Press kit</h3>
         <p class='text'>Please use these assets for promotional purposes</p>
       </div>
-      <div class="col icon">
+      <div class="col-4">
         <%= image_tag "SOA_icon.png", class: "img-fluid"%>
-        <p class='text'>Sign</p>
+        <p class='text text-center'>Sign</p>
       </div>
-      <div class="col logo">
+      <div class="col-4">
         <%= image_tag "SOA_Logo_clean.png", class: "img-fluid"%>
-        <p class='text'>Logo</p>
+        <p class='text text-center'>Logo</p>
       </div>
     </div>
     <div class="row">
-      <div class="col promo-photo">
+      <div class="col">
         <%= image_tag "promo_photo_sm.png", class: "img-fluid"%>
+        <p class='text text-center'>Press Image</p>
       </div>
-      <p class='text'>Press Image</p>
     </div>
   </div>
 </section>
