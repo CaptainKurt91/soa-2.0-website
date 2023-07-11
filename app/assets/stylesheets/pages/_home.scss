@@ -131,7 +131,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding-bottom: 2rem;
 
   i {
     color: white;
@@ -185,10 +184,21 @@ body {
 }
 
 .line-break {
+  // fix up media queries fro line break
   padding-top: 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.56);
   width: 90%;
   margin: 0 auto;
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    padding-top: 0;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    padding-top: 0;
+  }
 }
 
 #shows {
