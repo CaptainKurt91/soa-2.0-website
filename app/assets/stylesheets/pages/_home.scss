@@ -9,6 +9,14 @@ body {
   color: white;
 }
 
+.font-weight-normal {
+  font-weight: normal;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
  .main-heading {
   color: white;
   display: flex;
@@ -19,6 +27,7 @@ body {
   h1 {
     font-family: 'Lato', sans-serif;
     font-size: 4rem;
+    font-weight: 200;
   }
 
   /* Extra small devices (phones, 600px and down) */
@@ -72,7 +81,7 @@ body {
   h2 {
     padding-top: 2rem;
     padding-bottom: 3rem;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Lato', sans-serif;
     font-size: 4rem;
     text-decoration: underline;
@@ -242,20 +251,26 @@ body {
 #bio {
   // TODO: set media queries
   background-color: black;
+  color: white;
   p {
-    color: white;
     font-size: 1.5rem;
     font-family: 'Lato', sans-serif;
-    font-weight: bolder;
   }
   img {
     width: 90%;
     padding-bottom: 3rem;
   }
-  .text {
+  .contact-text{
     font-size: 3rem;
-    font-weight: bolder;
   }
+  @media only screen and (max-width: 600px) {
+    p {
+      font-size: 1em;
+    }
+    .contact-text{
+      font-size: 1.5rem;
+    }
+  }  
 }
 
 #assets {
