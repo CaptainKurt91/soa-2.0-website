@@ -252,16 +252,32 @@ body {
   background-color: black;
   color: white;
   font-family: 'Lato', sans-serif;
+
+  .link {
+    transition: 0.3s;
+  }
+
+  .link:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+  }
+
   p {
     font-size: 1.5rem;
   }
+
   img {
     padding-bottom: 3rem;
   }
+
   .contact-text {
+    color: white;
     font-size: 3rem;
     font-family: 'Lato', sans-serif;
   }
+
   @media only screen and (max-width: 600px) {
     p {
       font-size: 1em;
