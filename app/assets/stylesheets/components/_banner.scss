@@ -4,6 +4,46 @@
   align-items: center;
   
   .cover-art {
-    width: 13%;
+    width: 20%;
+    position: relative;
+    top: -7%
   }
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+   .cover-art {
+     width: 18%;
+   }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .cover-art {
+      width: 18%;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .cover-art {
+      width: 18%;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .cover-art {
+      width: 20%;
+    }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .cover-art {
+      width: 20%;
+    }
+  }
+}
+
+.jumbotron {
+  padding-left: 10px;
 }

@@ -18,7 +18,7 @@ body {
 }
 
  .main-heading {
-  color: white;
+  color: whitesmoke;
   display: flex;
   margin: 0 auto;
   position: absolute;
@@ -34,7 +34,7 @@ body {
   @media only screen and (max-width: 600px) {
     padding-right: 1rem;
     h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -81,7 +81,7 @@ body {
   h2 {
     padding-top: 2rem;
     padding-bottom: 3rem;
-    color: rgb(255, 255, 255);
+    color: whitesmoke;
     font-family: 'Lato', sans-serif;
     font-size: 4rem;
     text-decoration: underline;
@@ -93,7 +93,7 @@ body {
     h2 {
       padding-bottom: 1rem;
       padding-top: 1rem;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -142,7 +142,7 @@ body {
   justify-content: space-evenly;
 
   i {
-    color: white;
+    color: whitesmoke;
     padding: 16px;
     transition: 0.5s;
     font-size: 3.5em;
@@ -152,7 +152,7 @@ body {
     text-shadow: 0 0 15px white;
   }
     /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     i {
       padding: 0 13px;
       font-size: 2em;
@@ -223,14 +223,7 @@ body {
 #videos-section {
   background-color: black;
 
-  .upper-iframe-wrapper {
-    position: relative;
-    overflow: hidden;
-    width: 75%;
-    padding-top: 46.25%;
-  }
-
-  .lower-iframe-wrapper {
+  .iframe-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
