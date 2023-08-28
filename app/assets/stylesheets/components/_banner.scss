@@ -6,12 +6,12 @@
   .cover-art {
     width: 20%;
     position: relative;
-    top: -7%
   }
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
    .cover-art {
      width: 18%;
+     bottom: 12%
    }
   }
 
@@ -19,13 +19,15 @@
   @media only screen and (min-width: 600px) {
     .cover-art {
       width: 18%;
+      bottom: 10%;
     }
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
     .cover-art {
-      width: 18%;
+      width: 19%;
+      bottom: 3%
     }
   }
 
@@ -44,6 +46,3 @@
   }
 }
 
-.jumbotron {
-  padding-left: 10px;
-}
